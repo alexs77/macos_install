@@ -39,8 +39,62 @@ INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'expose-animation-duration', 'float', '0.1', 'Make all animations faster that are used by Mission Control.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'autohide-delay', 'float', '0', 'Disable the delay when you hide the Dock');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'autohide', 'bool', 'true', 'Automatically hide and show the Dock');
+
+-- https://github.com/ymendel/dotfiles/blob/master/osx/corners.defaults (and others):
+-- Possible values:
+--  0: no-op
+--  2: Mission Control (all windows)
+--  3: Show application windows
+--  4: Desktop
+--  5: Start screen saver
+--  6: Disable screen saver
+--  7: Dashboard
+-- 10: Put display to sleep
+-- 11: Launchpad
+-- 12: Notification Center
+
+    ---- The following are the values of each option in the GUI
+    -- Start Screen Saver = 5
+    --   Modifier = 0
+    -- Disable Screen Saver = 6
+    --   Modifier = 0
+    -- Mission Control = 2
+    --   Modifier = 0
+    -- Application Windows = 3
+    --   Modifier = 0
+    -- Desktop = 4
+    --   Modifier = 0
+    -- Dashboard = 7
+    --   Modifier = 0
+    -- Notification Center = 12
+    --   Modifier = 0
+    -- Launchpad = 11 
+    --   Modifier = 0
+    -- Put Display to Sleep = 10
+    --   Modifier = 0
+    -- None = 1
+    --   Modifier = 1048576
+
+-- Top Left: Mission Control
+-- Bottom Left: Dashboard
+-- Top Right: Programmfenster (Application Windows)
+-- Bottom Right: Launchpad
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tl-corner', 'int', '2', 'Top Left: Mission Control');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tl-modifier', 'int', '0', 'Top Left: Mission Control');
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-bl-corner', 'int', '7', 'Top Left: Mission Control');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-bl-modifier', 'int', '0', 'Top Left: Mission Control');
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tr-corner', 'int', '3', 'Top Left: Mission Control');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tr-modifier', 'int', '0', 'Top Left: Mission Control');
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-br-corner', 'int', '11', 'Top Left: Mission Control');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-br-modifier', 'int', '0', 'Top Left: Mission Control');
+
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tl-corner', 'int', '5', 'Top left screen corner enable screen saver');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tl-modifier', 'int', '0', 'Top left screen corner enable screen saver');
+
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'safari', 'com.apple.Safari', 'WebKitInitialTimedLayoutDelay', 'string', '0.25', 'Disable the standard delay in rendering a Web page.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'safari', 'com.apple.Safari', 'IncludeInternalDebugMenu', 'bool', 'true', 'Enable Safari’s debug menu.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.menuextra.battery', 'ShowPercent', 'string', 'YES', 'Show percentage battery info.');
