@@ -23,16 +23,23 @@ class MacosFirstInstall
   end
 
   def install
-    @precore.compact.each { |command| system command }
-    @precask.compact.each { |command| system command }
-    @premas.compact.each { |command| system command }
-    @pregem.compact.each { |command| system command }
+    @precore.compact.each { |command| puts command; system command }
+    @precask.compact.each { |command| puts command; system command }
+    @premas.compact.each { |command| puts command; system command }
+    @pregem.compact.each { |command| puts command; system command }
+
+    puts "Installing oh-my-zsh"
     system('curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh')
+
+    puts "Installing oh-my-zsh zsh-completions"
     system('git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions')
+
+    puts "Installing iterm2 Shell integrations"
     system('curl -L https://iterm2.com/misc/install_shell_integration.sh | bash')
   end
 
   def cleanup
+    puts "Running brew cleanup"
     system('brew cleanup')
   end
 
@@ -58,8 +65,8 @@ class MacOSConfig
   end
 
   def config
-    @predefaults.each { |command| system command }
-    @presystemsetup.each { |command| system command }
+    @predefaults.each { |command| puts command; system command }
+    @presystemsetup.each { |command| puts command; system command }
   end
 
   def main
