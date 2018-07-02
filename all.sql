@@ -24,6 +24,7 @@ INSERT INTO config(method, category, key, keyvalue, info) VALUES ('systemsetup',
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'NSNavPanelExpandedStateForSaveMode', 'bool', 'true', 'Expand save panel by default.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'NSNavPanelExpandedStateForSaveMode2', 'bool', 'true', 'Expand save panel by default.');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'PMPrintingExpandedStateForPrint', 'bool', 'true', 'Expand print panel by default.');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'AppleAquaColorVariant', 'int', '1', 'Color scheme: blue');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'finder', 'com.apple.finder', 'DisableAllAnimations', 'bool', 'true', 'Disable animation when opening the Info window in Finder (cmd + i).');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'finder', 'com.apple.finder', 'AppleShowAllFiles', 'bool', 'true', 'Show in finder hidden files by default.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'finder', 'com.apple.finder', '_FXShowPosixPathInTitle', 'bool', 'true', 'Display full POSIX path as Finder window title.');
