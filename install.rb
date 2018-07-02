@@ -1,17 +1,17 @@
 require 'open-uri'
 require 'sqlite3'
-require 'mkmf'
+# require 'mkmf'
 
 # For installing and configure macOS systems
 class MacosFirstInstall
   def dbconnect
-    @db = SQLite3::Database.open 'macos_install.db'
+    @db = SQLite3::Database.open 'install_macos.db'
     @db.results_as_hash = true
-    @tap = @db.execute("select * from software WHERE method='tap'")
-    @core = @db.execute("select * from software WHERE method='core'")
-    @cask = @db.execute("select * from software WHERE method='cask'")
-    @mas = @db.execute("select * from software WHERE method='mas'")
-    @gem = @db.execute("select * from software WHERE method='gem'")
+    @tap = @db.execute("select distinct * from software WHERE method='tap'")
+    @core = @db.execute("select distinct * from software WHERE method='core'")
+    @cask = @db.execute("select distinct * from software WHERE method='cask'")
+    @mas = @db.execute("select distinct * from software WHERE method='mas'")
+    @gem = @db.execute("select distinct * from software WHERE method='gem'")
   end
 
   def preinstall
@@ -46,7 +46,7 @@ end
 
 class MacOSConfig
   def dbconnect
-    @db = SQLite3::Database.open 'macos_install.db'
+    @db = SQLite3::Database.open 'install_macos.db'
     @db.results_as_hash = true
     @defaults = @db.execute("select * from config WHERE method='defaults'")
     @systemsetup = @db.execute("select * from config WHERE method='systemsetup'")
@@ -70,4 +70,4 @@ class MacOSConfig
 end
 
 MacosFirstInstall.new.main
-MacOSConfig.main
+MacOSConfig.new.main

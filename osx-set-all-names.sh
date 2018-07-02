@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SNAME='mymac'
-DOMAIN='safematix.com'
+SNAME='alexander'
+DOMAIN='tutti.ch'
 
 # Bonjour name ending in .local
 sudo scutil --set LocalHostName "${SNAME}"
