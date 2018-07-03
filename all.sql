@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS config (
   info TEXT VARCHAR(255)
 );
 
-INSERT INTO config(method, category, key, keyvalue, info) VALUES ('systemsetup', 'time', 'settimezone', 'Europe/Zurich', 'Set timezone to Zurich.');
+INSERT INTO config(method, category, key, keyvalue, info) VALUES ('sudo systemsetup', 'time', 'settimezone', 'Europe/Zurich', 'Set timezone to Zurich.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'NSAutomaticWindowAnimationsEnabled', 'bool', 'false', 'Disable animations when opening and closing windows.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'NSAutomaticWindowAnimationsEnabled', 'bool', 'false', 'Disable animations when opening and closing windows.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'QLPanelAnimationDuration', 'float', '0', 'Disable animations when opening a Quick Look window.');
