@@ -169,6 +169,8 @@ INSERT INTO software(name, category, method, info) VALUES ('wireshark', 'securit
 INSERT INTO software(name, category, method) VALUES ('youtube-dl', 'multimedia', 'core');
 INSERT INTO software(name, category, method, info) VALUES ('zsh', 'core', 'core', '--with-pcre --with-unicode9');
 
+INSERT INTO software(name, category, method) VALUES ('1password', 'office', 'cask');
+INSERT INTO software(name, category, method) VALUES ('1password-cli', 'office', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('adobe-creative-cloud', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bartender', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('cheatsheet', 'multimedia', 'cask');
