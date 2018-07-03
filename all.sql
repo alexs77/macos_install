@@ -211,6 +211,7 @@ INSERT INTO software(name, category, method) VALUES ('slack', 'communication', '
 -- INSERT INTO software(name, category, method) VALUES ('snagit', 'support', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('sonos', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('teamviewer', 'support', 'cask');
+INSERT INTO software(name, category, method) VALUES ('homebrew/cask-versions/thunderbird-beta', 'office', 'cask');
 INSERT INTO software(name, category, method) VALUES ('torbrowser', 'browser', 'cask');
 INSERT INTO software(name, category, method) VALUES ('vagrant', 'dev', 'cask');
 INSERT INTO software(name, category, method) VALUES ('visual-studio-code', 'programming', 'cask');
