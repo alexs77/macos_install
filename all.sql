@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS config (
 );
 
 INSERT INTO config(method, category, key, keyvalue, info) VALUES ('sudo systemsetup', 'time', 'settimezone', 'Europe/Zurich', 'Set timezone to Zurich.');
+
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'NSAutomaticWindowAnimationsEnabled', 'bool', 'false', 'Disable animations when opening and closing windows.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'NSAutomaticWindowAnimationsEnabled', 'bool', 'false', 'Disable animations when opening and closing windows.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'window', 'NSGlobalDomain', 'QLPanelAnimationDuration', 'float', '0', 'Disable animations when opening a Quick Look window.');
@@ -93,8 +94,16 @@ INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-br-corner', 'int', '11', 'Top Left: Mission Control');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-br-modifier', 'int', '0', 'Top Left: Mission Control');
 
--- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tl-corner', 'int', '5', 'Top left screen corner enable screen saver');
--- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'wvous-tl-modifier', 'int', '0', 'Top left screen corner enable screen saver');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'largesize', 'int', '128', 'Scale dock icons');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'magnification', 'int', '1', 'Enable dock icon magnification');
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'tilesize', 'int', '16', 'Size of dock icons');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'orientation', 'string', 'left', 'Position of dock');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'mineffect', 'string', 'genie', 'Minifaction effect of apps');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'minimize-to-application', 'int', '1', 'minimize-to-application');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'launchanim', 'int', '1', 'Animation of application launch');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'showAppExposeGestureEnabled', 'int', '1', 'Enable Expose gesture.');
+
 
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'safari', 'com.apple.Safari', 'WebKitInitialTimedLayoutDelay', 'string', '0.25', 'Disable the standard delay in rendering a Web page.');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'safari', 'com.apple.Safari', 'IncludeInternalDebugMenu', 'bool', 'true', 'Enable Safari’s debug menu.');
@@ -117,6 +126,16 @@ INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'mail', 'com.apple.mail', 'DisableReplyAnimations', 'bool', 'true', 'Disable the animation when you replying an e-mail');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'textedit', 'com.apple.TextEdit', 'RichText', 'int', '0', 'Use plain text as default format in TextEdit');
 INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'appstore', 'com.apple.appstore', 'ShowDebugMenu', 'bool', 'true', 'Show debug menu in appstore.');
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'AppleAquaColorVariant', 'int', '1', 'Color scheme: blue (1).');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'AppleHighlightColor', 'string', '0.752941 0.964706 0.678431', 'Highlight color: green (1).');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'NSGlobalDomain', 'NSQuitAlwaysKeepsWindows', 'int', '0', 'Close windows when quitting application - do not.');
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.dashboard', 'dashboard-enabled-state', 'int', '3', 'Enable dashboard as an overlay.');
+
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.menuextra.clock', 'DateFormat', 'string', 'EEE d. MMM  HH:mm:ss', 'Clock in menu: format with seconds');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.menuextra.clock', 'FlashDateSeparators', 'int', '1', 'Clock in menu: flash separator');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'system', 'com.apple.menuextra.clock', 'IsAnalog', 'int', '0', 'Clock in menu: not analog clock');
 
 INSERT INTO software(name, category, method) VALUES ('caskroom/cask', 'tap', 'tap');
 INSERT INTO software(name, category, method) VALUES ('caskroom/drivers', 'tap', 'tap');
