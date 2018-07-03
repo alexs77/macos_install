@@ -146,7 +146,6 @@ INSERT INTO software(name, category, method) VALUES ('testssl', 'security', 'cor
 INSERT INTO software(name, category, method) VALUES ('tmux', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('unrar', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('wget', 'core', 'core');
-INSERT INTO software(name, category, method) VALUES ('whireshark', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('wireshark', 'security', 'core');
 INSERT INTO software(name, category, method) VALUES ('youtube-dl', 'multimedia', 'core');
 INSERT INTO software(name, category, method) VALUES ('zsh', 'core', 'core');
@@ -154,7 +153,7 @@ INSERT INTO software(name, category, method) VALUES ('zsh', 'core', 'core');
 -- INSERT INTO software(name, category, method) VALUES ('adobe-creative-cloud', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('bartender', 'multimedia', 'cask');
 INSERT INTO software(name, category, method) VALUES ('cheatsheet', 'multimedia', 'cask');
-INSERT INTO software(name, category, method) VALUES ('chefdk', 'dev', 'cask');
+-- INSERT INTO software(name, category, method) VALUES ('chefdk', 'dev', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('citrix-receiver', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('cleanmymac', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('controlplane', 'core', 'cask');
@@ -203,8 +202,8 @@ INSERT INTO software(name, category, method, info) VALUES ('497799835', 'program
 
 -- INSERT INTO software(name, category, method, info) VALUES ('1090488118', 'core', 'mas', 'gemini 2');
 -- INSERT INTO software(name, category, method, info) VALUES ('405399194', 'core', 'mas', 'kindle');
-INSERT INTO software(name, category, method, info) VALUES ('1063996724', 'core', 'mas', 'Tyme 2');
-INSERT INTO software(name, category, method, info) VALUES ('494803304', 'core', 'mas', 'WiFi Explorer');
+-- INSERT INTO software(name, category, method, info) VALUES ('1063996724', 'core', 'mas', 'Tyme 2');
+-- INSERT INTO software(name, category, method, info) VALUES ('494803304', 'core', 'mas', 'WiFi Explorer');
 -- INSERT INTO software(name, category, method, info) VALUES ('409183694', 'office', 'mas', 'keynote');
 -- INSERT INTO software(name, category, method, info) VALUES ('409201541', 'office', 'mas', 'pages');
 -- INSERT INTO software(name, category, method, info) VALUES ('409203825', 'office', 'mas', 'numbers');
