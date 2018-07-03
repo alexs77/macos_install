@@ -145,6 +145,7 @@ INSERT INTO software(name, category, method) VALUES ('caskroom/fonts', 'tap', 't
 INSERT INTO software(name, category, method) VALUES ('bash-completion', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('bash', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('coreutils', 'core', 'core');
+INSERT INTO software(name, category, method, info) VALUES ('curl', 'core', 'core', '--with-libmetalink --with-libssh2 --with-nghttp2');
 INSERT INTO software(name, category, method) VALUES ('fish', 'programming', 'core');
 INSERT INTO software(name, category, method) VALUES ('go', 'programming', 'core');
 INSERT INTO software(name, category, method, info) VALUES ('gnupg', 'crypt', 'core', '--with-readline');
