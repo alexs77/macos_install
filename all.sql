@@ -192,6 +192,7 @@ INSERT INTO software(name, category, method) VALUES ('font-source-code-pro', 'fo
 INSERT INTO software(name, category, method) VALUES ('homebrew/cask-versions/google-chrome-beta', 'browser', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('gpg-suite', 'communication', 'cask');
 INSERT INTO software(name, category, method) VALUES ('handbrake', 'multimedia', 'cask');
+INSERT INTO software(name, category, method) VALUES ('hyper switch', 'core', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('i1profiler', 'driver', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('istat-menus', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('iterm2', 'core', 'cask');
