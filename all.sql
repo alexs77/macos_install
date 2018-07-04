@@ -181,6 +181,7 @@ INSERT INTO software(name, category, method) VALUES ('cleanmymac', 'core', 'cask
 INSERT INTO software(name, category, method) VALUES ('controlplane', 'core', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('dnscrypt', 'core', 'cask');
 INSERT INTO software(name, category, method) VALUES ('docker', 'dev', 'cask');
+INSERT INTO software(name, category, method) VALUES ('etcher', 'core', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('firefox', 'browser', 'cask');
 INSERT INTO software(name, category, method) VALUES ('homebrew/cask-versions/firefox-beta', 'browser', 'cask');
 INSERT INTO software(name, category, method) VALUES ('font-dejavu-sans', 'font', 'cask');
