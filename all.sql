@@ -189,6 +189,7 @@ INSERT INTO software(name, category, method) VALUES ('font-monoid', 'font', 'cas
 INSERT INTO software(name, category, method) VALUES ('font-raleway', 'font', 'cask');
 INSERT INTO software(name, category, method) VALUES ('font-source-code-pro', 'font', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('garmin-express', 'driver', 'cask');
+INSERT INTO software(name, category, method) VALUES ('github', 'dev', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('google-chrome', 'browser', 'cask');
 INSERT INTO software(name, category, method) VALUES ('homebrew/cask-versions/google-chrome-beta', 'browser', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('gpg-suite', 'communication', 'cask');
