@@ -42,6 +42,9 @@ INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'autohide-delay', 'float', '0', 'Disable the delay when you hide the Dock');
 -- INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.apple.dock', 'autohide', 'bool', 'true', 'Automatically hide and show the Dock');
 
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.googlecode.iterm2', 'OnlyWhenMoreTabs', 'int', '1', 'Confirm closing multiple sessions.');
+INSERT INTO config(method, category, domain, key, keytyp, keyvalue, info) VALUES ('defaults', 'dock', 'com.googlecode.iterm2', 'SavePasteHistory', 'int', '1', 'Save copy/paste and command history to disk.');
+
 -- https://github.com/ymendel/dotfiles/blob/master/osx/corners.defaults (and others):
 -- Possible values:
 --  0: no-op
