@@ -162,7 +162,6 @@ INSERT INTO software(name, category, method) VALUES ('nmap', 'security', 'core')
 -- INSERT INTO software(name, category, method) VALUES ('node', 'programming', 'core');
 INSERT INTO software(name, category, method) VALUES ('p7zip', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('pwgen', 'core', 'core');
-INSERT INTO software(name, category, method) VALUES ('rubocop', 'dev', 'gem');
 INSERT INTO software(name, category, method) VALUES ('shellcheck', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('sqlite', 'core', 'core');
 INSERT INTO software(name, category, method) VALUES ('testssl', 'security', 'core');
@@ -172,6 +171,8 @@ INSERT INTO software(name, category, method, info) VALUES ('wget', 'core', 'core
 INSERT INTO software(name, category, method, info) VALUES ('wireshark', 'security', 'core', '--with-libsmi --with-libssh --with-nghttp2');
 INSERT INTO software(name, category, method) VALUES ('youtube-dl', 'multimedia', 'core');
 INSERT INTO software(name, category, method, info) VALUES ('zsh', 'core', 'core', '--with-pcre --with-unicode9');
+
+INSERT INTO software(name, category, method) VALUES ('rubocop', 'dev', 'gem');
 
 INSERT INTO software(name, category, method) VALUES ('1password', 'office', 'cask');
 INSERT INTO software(name, category, method) VALUES ('1password-cli', 'office', 'cask');
