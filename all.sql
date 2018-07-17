@@ -204,6 +204,7 @@ INSERT INTO software(name, category, method) VALUES ('libreoffice-language-pack'
 INSERT INTO software(name, category, method) VALUES ('libreoffice', 'office', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('microsoft-office', 'office', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('microsoft-teams', 'communication', 'cask');
+INSERT INTO software(name, category, method) VALUES ('meld', 'dev', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('nextcloud', 'core', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('omnifocus', 'office', 'cask');
 -- INSERT INTO software(name, category, method) VALUES ('omnigraffle', 'office', 'cask');
