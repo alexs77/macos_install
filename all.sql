@@ -151,6 +151,8 @@ INSERT INTO software(name, category, method, info) VALUES ('coreutils', 'core', 
 INSERT INTO software(name, category, method, info) VALUES ('curl', 'core', 'core', '--with-libmetalink --with-libssh2 --with-nghttp2');
 INSERT INTO software(name, category, method, info) VALUES ('findutils', 'core', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('fish', 'programming', 'core', '');
+INSERT INTO software(name, category, method, info) VALUES ('grep', 'core', 'core', '');
+INSERT INTO software(name, category, method, info) VALUES ('grepcidr', 'core', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('go', 'programming', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('gnupg', 'crypt', 'core', '--with-readline');
 INSERT INTO software(name, category, method, info) VALUES ('hping', 'security', 'core', '');
@@ -162,7 +164,9 @@ INSERT INTO software(name, category, method, info) VALUES ('netcat', 'core', 'co
 INSERT INTO software(name, category, method, info) VALUES ('nmap', 'security', 'core', '');
 -- INSERT INTO software(name, category, method, info) VALUES ('node', 'programming', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('p7zip', 'core', 'core', '');
+INSERT INTO software(name, category, method, info) VALUES ('pdfgrep', 'core', 'core', '--with-pcre');
 INSERT INTO software(name, category, method, info) VALUES ('pwgen', 'core', 'core', '');
+INSERT INTO software(name, category, method, info) VALUES ('ripgrep', 'core', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('shellcheck', 'core', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('sqlite', 'core', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('testssl', 'security', 'core', '');
