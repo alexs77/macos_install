@@ -145,6 +145,9 @@ INSERT INTO software(name, category, method) VALUES ('caskroom/drivers', 'tap', 
 INSERT INTO software(name, category, method) VALUES ('caskroom/versions', 'tap', 'tap');
 INSERT INTO software(name, category, method) VALUES ('caskroom/fonts', 'tap', 'tap');
 
+INSERT INTO software(name, category, method, info) VALUES ('ansible', 'dev', 'core', '');
+INSERT INTO software(name, category, method, info) VALUES ('ansible-cmdb', 'dev', 'core', '');
+INSERT INTO software(name, category, method, info) VALUES ('ansible-lint', 'dev', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('bash-completion', 'core', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('bash', 'core', 'core', '');
 INSERT INTO software(name, category, method, info) VALUES ('coreutils', 'core', 'core', '');
